@@ -1,0 +1,38 @@
+{% extends "layout_log.html" %}
+
+{% block title %}
+Login
+{% endblock %}
+
+{% block main %}
+<center>
+<div class="soap2" style="width: 500px; height: 600px; background-color: white;">
+    <center>
+        <br><br><br>
+    <form action="/login" method="post">
+        <h4 class = "login_and_register">Log In</h4><br>
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="username" placeholder="Username" type="text" required>
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" name="password" placeholder="Password" type="password" required>
+        </div>
+        <div class="help" style="color: #52734D">Don't have an account yet?<a href="register" style="text-decoration : none; color: #91C788"> Create one here.</a></div>
+        <br>
+        <button class="btn btn-primary" type="submit" style="background-color: #DDFFBC; border-color: #DDFFBC;color: #004225;"><b>Log In</b></button>
+    </form>
+    <center>
+</div>
+</center>
+    <br><br><br>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for msg in messages %}
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+              <strong>{{ msg }}</strong>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
+{% endblock %}	

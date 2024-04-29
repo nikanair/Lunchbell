@@ -1,0 +1,62 @@
+{% extends "layout_seller.html" %}
+
+{% block title %}
+History
+{% endblock %}
+
+{% block main %}
+    <div class="heading" style="text-align: left">All Your Products.</div> <div class="subheading" style="text-align: left">
+    &#127793; Grow your farm, grow our options.</div> 
+
+    <br>
+	<div class = "table table-stripped">
+        <table class="table"><!-- table-success table-striped">-->
+            <thead>
+                <tr >
+                    <th class="text-start">Product Name</th>
+                    <th class="text-end">Price (in ₹)</th>
+                    <th class="text-end">Contact Number</th>
+                    <th class="text-end">Delivery</th>
+                    <th class="text-end">Availability</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for product in products %}
+                    <tr>
+                        <td class="text-start">{{ product.name }}</td>
+                        <td class="text-end">₹ {{ product.price }}</td>
+                        <td class="text-end">{{ product.phone }}</td>
+                        <td class="text-end">{{ product.delivery }}</td>
+                        <td class="text-end">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" style="background-color: #DDFFBC; border-color: #DDFFBC;color: #004225;">
+                              Out of Stock
+                            </button>
+                        </td>
+                    </tr>
+                {% endfor %}
+                 <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="staticBackdropLabel">Remove the item from the market</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                        <div class="offcanvas-body">
+                            <div>
+                                <h7>Are You Sure?</h7><br><h8>Your customers will not be able to purchase this item unless you readd it once it is available.</h8>
+                            </div>
+                            <form action="/delete" method="post">
+                                <select class="select" name="name">
+                                  <option disabled selected>Item Name</option>
+                                  {% for product in products %}
+                                      <option value="{{ product.name }}">{{ product.name }}</option>
+                                  {% endfor %}
+                                </select>
+                                <br><br><br>
+                                <button class="btn btn-primary" type="submit" style="background-color: #DDFFBC; border-color: #DDFFBC;color: #004225;"><b>Out of Stock</b></button>
+                            </form>
+                        </div>
+                </div>
+            </tbody>
+        </table>
+    </div>
+
+{% endblock %}

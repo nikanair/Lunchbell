@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Quantity
+{% endblock %}
+
+{% block main %}
+	<center>
+	<dotlottie-player src="https://lottie.host/1b1d0224-abfd-4d8b-b8dc-13fc509eaa12/8xd1a3JcCQ.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player></center>
+	<div class="project">You will need <div class="value">{{ value }}</div> number of the veggie!</div>	
+	<form action='/direct' method="post">
+	<button class="btn btn-primary" type="submit" style="background-color: #DDFFBC; border-color: #DDFFBC;color: #004225;"><b>Proceed to Purchase</b></button>
+	</form>
+{% endblock %}

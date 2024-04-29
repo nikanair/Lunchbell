@@ -1,0 +1,53 @@
+{% extends "layout_reg.html" %}
+
+{% block title %}
+Register
+{% endblock %}
+
+{% block main %}
+<center>
+
+<div class="soap2" style="width: 550px; height: 600px; background-color: white;">
+    <center><br><br>
+	<h4 class = "login_and_register">Create Your Account</h4><br>
+    <form action="/register" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="username" placeholder="Username" type="text" required>
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" autocomplete="off" name="school" placeholder="Your School Name" type="text">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" autocomplete="off" name="password" placeholder="Password" type="password" required>
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" autocomplete="off" name="confirmation" placeholder="Confirm Password" type="password" required>
+        </div>
+        <div class="help" style="color: #52734D">How you are contributing to lunchbell. Know More</div><br>
+        <select class="select" name="status">
+          <option disabled selected>Select an option</option>
+          <option value="1">Buyer</option>
+          <option value="2">Seller</option>
+        </select>
+        <br>
+        <br>
+        <div class="help" style="color: #52734D">Already have an account?<a href="login" style="text-decoration : none; color: #91C788"> Log in here.</a></div>
+        
+        <br>
+        <button class="btn btn-primary" type="submit" style="background-color: #DDFFBC; border-color: #DDFFBC;color: #004225"><b>Register Now</b></button>
+    </form>
+    <center>
+</div>
+</center>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for msg in messages %}
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>{{ msg }}</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Quantity
+{% endblock %}
+
+{% block main %}
+	
+	<div style="text-align: left;">
+	<h4 class="purchase_quantity">Calculate the Quantity</h4>
+	<h5 class="greet" >
+	Welcome to the School Veggie Calculator!
+	</h5>
+	
+	<center>
+	<div class="card" style="width: 40rem; height: 17rem; background-color: #91C788; border-width: 0px;">
+	<div class="card-header">Lunchbell: Quantity Specializer</div>
+	<br>
+
+	<h5 class="quantity">Quantity Specializer</h5>
+	
+	<form method="post" action="\quantity">
+		<div class="mb-3">
+		<input class = "form-control mx-auto w-auto" type="number" placeholder="No. of Students" autofocus autocomplete="off" name="serving_size" required></div>
+		
+		<div class="mb-3">
+		<input class = "form-control mx-auto w-auto" type="number" placeholder="Number of Servings(in decimel)" autofocus autocomplete="off" name="num_servings" required step="0.01" min="0">
+		</div>
+		<button class="btn btn-primary" type="submit" style="background-color: #DDFFBC;color: #52734D; border-width: 0px;"><b>Calculate</b></button>
+	</form>
+
+	</div>
+	</center>
+	<br>
+		<div class="c-hUpsPh-icTKoBa-css">
+			<div  class="c-hUpsPh-ifCsQfY-css">
+			    <div class="c-hUpsPh-ihgcmEP-css">
+				    	<i class="fa fa-heart" style="padding-top: 8px; padding-right: 3px;font-size: 22px;color: #52734D"></i>
+				      <b style="color: #52734D;font-size: 17px">Calculate</b> <p style="padding-left: 30px;">Click the calculate button to see how much of each vegetable you need in total.</p>
+			    </div>
+			</div>
+			<div class="c-hUpsPh-ifCsQfY-css">
+			    <div class="c-hUpsPh-ihgcmEP-css">
+				      <i class="fa fa-heart" style="padding-top: 8px; padding-right: 3px;font-size: 22px;color: #52734D"></i>
+				      <b style="color: #52734D;font-size: 17px">Reduce Food Wastage</b> <p style="padding-left: 30px;">Calculate accurately the amount of veggies needed to minimize food wastage and ensure resources conservation thereby reduce environmental impact.</p>
+			    </div>
+			</div>
+		    <div class="c-hUpsPh-ifCsQfY-css">
+			    <div class="c-hUpsPh-ihgcmEP-css">
+				      <i class="fa fa-heart" style="padding-top: 8px; padding-right: 3px;font-size: 22px;color: #52734D"></i>
+				      <b style="color: #52734D;font-size: 17px">Ensure Food Sufficiency</b> <p style="padding-left: 30px;">Calculating the right amount of veggies ensures that there's enough food for everyone.</p>
+			    </div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

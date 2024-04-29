@@ -1,0 +1,149 @@
+{% extends "layout_us.html" %}
+
+{% block title %}
+About Us
+{% endblock %}
+
+{% block main %}
+	<div class="div-1">
+		<br><br>
+		<div class="brand">
+			<b>Lunchbell</b>
+			<div class="motto">
+				Fighting scarcity, reducing waste <br><b>with precision supply.</b>
+			</div>
+			<div class="content" style="color: #C1F4C5">
+				Join our community and contribute towards<br>creating a better world for the future. 
+				<br><br>
+			</div>
+			<ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="/register" style="color: #004225; background-color: white; width: 110px; height: 35px; font-size: 15px;"><b>Get Started</b></a></li>
+                <br>
+                <li class="nav-item"><a class="nav-link" href="/login" style="  color: white ; width: 100px; height: 35px; font-size: 15px;"><b>Log In</b></a></li>
+            </ul>
+		</div>
+		<br><br><br><br>
+		
+			<img src="/static/rural-1.png">
+	</div>	
+	<br>
+	
+	<br>
+	<div>
+		<center>
+		<div class="address">
+			<b>OUR MISSION TO SAVE LIVES</b>
+		</div>
+		<div class="intro">
+			<p>
+			We are addressing India's most pressing problems that affects<br>the living of <b><span class="number">34.4 million lives</span></b><span class="last"> including the youth.<br></span>
+			<p>
+		</div>
+		<div class="image-row">
+		  <img src="/static/1.png" alt="Image 1" width="200" height="200">
+		  <img src="/static/2.png" alt="Image 2" width="200" height="200">
+		  <img src="/static/3.png" alt="Image 4" width="200" height="200">
+		  <img src="/static/4.png" alt="Image 6" width="200" height="200">
+		  <img src="/static/5.png" alt="Image 7" width="200" height="200">
+		  <img src="/static/6.png" alt="Image 8" width="200" height="200">
+		</div>
+		</center>
+	</div>
+	<br><br>
+	<center>
+		<div class="address">
+			<b>UN <span style="color:  #E5243B;">S</span><span style="color:  #DDA63A;">D</span><span style="color:   #0072BC;">G</span>s DRIVING OUR MISSION</b>
+		
+			<div style="font-size: 13px;">
+				Click to know more!
+			</div>
+		</div>
+	<div>
+		
+		<button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="
+		By providing farmers with a platform to sell their produce at fair prices, Lunchbell contributes to poverty reduction among small and landless farmers who struggle to afford basic necessities.
+		" style="border-color: white; background-color: white;">
+		  <img src="data:image/png;base64,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">
+		</button>
+		<button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="
+		Lunchbell helps address food scarcity and wastage by ensuring that surplus produce is utilized efficiently and reaches those in need, particularly schools facing food shortages.
+		" style="border-color: white; background-color: white;">
+		  <img src="data:image/png;base64,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">
+		</button>
+		<button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="
+		By supporting farmers and reducing food wastage, Lunchbell indirectly contributes to the preservation of terrestrial ecosystems and biodiversity by reducing the environmental impact of food production and waste.
+		" style="border-color: white; background-color: white;">
+		  <img src="data:image/png;base64,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">
+		</button>
+		</center>
+	</div>
+	<section class="hidden">
+		<h1><div class="problem" > <div style="text-decoration-line: underline; text-decoration-style: wavy;text-decoration-color: #C1F4C5;
+">ONE SOLUTION, <b>5</b> OUTCOMES</div></h1>
+	</section>
+	<section class="hidden">
+		<div class="soap" style="width: 800px; height: 600px">
+			<div class="count" style="color : #004225;">1.<br>No Surplus Waste</div>
+  		<div class="content">
+  			<p>
+  				In India, poor farmers struggle to use surplus food from their fields due to a lack of cold storage. This results in wasted produce due to spoilage.
+  			<br><br>		
+  				<b>Lunchbell offers farmers a platform to sell surplus produce affordably, especially helping schools with food shortages.</b>
+  			</p>
+  		</div>
+  	</div>
+	</section>
+	<br><br><br><br><br><br><br>
+	<section class="hidden">
+		<div class="soap" style="width: 800px; height: 600px; background-color: #8DECB4;">
+			<div class="count" style="color : #004225;">2.<br>Fresh & Affordable</div>
+  		<div class="content" style="color : #004225;">
+  			<p>
+  				Half of the students fall sick due to poor cleanliness and spoiled vegetables.
+  			<br><br>		
+  				<b>Lunchbell revolutionizes India's product quality by allowing farmers to sell their fresh produce directly on the platform, ensuring top-notch quality and health benefits for our children.</b>
+  			</p>
+  		</div>
+  	</div>
+	</section>
+	<br><br><br><br><br><br><br>
+	<section class="hidden">
+		<div class="soap" style="width: 800px; height: 600px; background-color: #8576FF">
+			<div class="count" style="color: black">3. Income for Poor</div>
+  		<div class="content" style="color: black;">
+  			<p>
+  				Millions of small and landless farmers in India struggle to afford two meals daily, often relying on loans from moneylenders and wealthier farmers in the informal sector. This cycle of debt traps them further.
+  			<br><br>		
+  				<b>Lunchbell empowers impoverished farmers by providing them with a reliable income through the sale of their produce at fair prices. This support extends beyond the farmers, benefiting local schools in rural India with limited access to other NGOs and meal supply programs.</b>
+  			</p>
+  		</div>
+  	</div>
+	</section>
+	<br><br><br><br><br><br><br>
+	<section class="hidden">
+		<div class="soap" style="width: 800px; height: 600px; background-color: #FFC94A">
+			<div class="count" style="color: black">4.<br>No Food Wastage</div>
+  		<div class="content" style="color: black;">
+  			<p>
+  				In our world, both "food scarcity" and "food wastage" persist among thousands of people in many areas. Without a balance between the two, our economy will inevitably face significant challenges regarding food availability. In urban areas, many families frequently discard excess food instead of utilizing it for other purposes such as composting or donating to those in need.
+  			<br><br>		
+  				<b>Lunchbell extends its reach beyond farmers and schools, welcoming individuals from all walks of life who wish to contribute to charity and kindness. Our platform invites anyone willing to offer surplus food or food supplies at a small price to those in need.</b>
+  			</p>
+  		</div>
+  	</div>
+	</section>
+	<br><br><br><br><br><br><br>
+	<section class="hidden">
+		<div class="soap" style="width: 800px; height: 600px; background-color: #FEECE2">
+			<div class="count" style="color: black;">5. Calculate Quantity</div>
+  		<div class="content" style="color: black;">
+  			<p>
+  				In many remote schools across India, the student population is small, resulting in an excess of food prepared for the mid-day meal program. This imbalance leads to both food wastage and shortages for schools with limited food supplies.
+  			<br><br>		
+  				<b>Lunchbell tackles this issue with its 'Quantity Specializer' product, which precisely calculates the amount of each vegetable needed for a meal. This feature aims to prevent unnecessary food wastage in the program while ensuring accurate meal preparation.</b>
+  			</p>
+  		</div>
+  	</div>
+	</section>
+
+{% endblock %}

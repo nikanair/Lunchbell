@@ -1,0 +1,157 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Cart
+{% endblock %}
+
+{% block main %}
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for msg in messages %}
+            <div class="alert alert-success" role="alert">
+              <strong>{{ msg }}</strong>
+            </div>
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
+
+            {% if cart_items|length != 0 %}
+                <div class="heading" style="color: #004225;text-align: left">My Cart.</div>
+                <div class="table table-stripped">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="text-start">Product Name</th>
+                                    <th class="text-end">Price (in ₹)</th>
+                                    <th class="text-end">Contact Number</th>
+                                    <th class="text-end">Delivery</th>
+                                    <th class="text-end">Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            {% for cart_item in cart_items %}
+                    
+                            
+                                <form action="/remove" method="post">
+                                    <tr>
+                                        <td class="text-start">{{ cart_item.name }}</td>
+                                        <td class="text-end">₹ {{ cart_item.price }}</td>
+                                        <td class="text-end">{{ cart_item.phone }}</td>
+                                        <td class="text-end">{{ cart_item.delivery }}</td>
+                                        <td class="text-end">
+                                            <input type="hidden" value="{{ cart_item.product_id }}" name="id">
+                                            <input type="submit" value="Remove" class="btn btn-primary" style="background-color: #DDFFBC; border-color: #DDFFBC;color: #004225;">
+                                        </td>
+                                    </tr>
+                                </form>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalToggle" style="background-color: #004225; border-color: #004225;color: #DDFFBC;">
+                Purchase Now
+                </button>
+                <div class="modal fade" id="exampleModalToggle" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Place Your Order</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <table class="table"><!-- table-dark">-->
+                                    <thead>
+                                        <tr>
+                                            <th class="text-start">Product Name</th>
+                                            <th class="text-end">Quantity(in kg or other(if dish))</th>
+                                            <th class="text-end">Price (in ₹)</th>
+                                            <th class="text-end">Total Price (in ₹)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for cart_item in cart_items %}
+                                        <tr>
+                                            <td class="text-start">{{ cart_item.name }}</td>
+                                            <td class="text-end">
+                                                <input type="number" min=1 step=1 value=1 name="quantity_{{ cart_item.product_id }}">
+                                            </td>
+                                            <td class="text-end">₹ {{ cart_item.price }}</td>
+                                            <td class="text-end">
+                                                <span id="total_price_{{ cart_item.product_id }}"></span>
+                                            </td>
+                                        </tr>
+                                        
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="modal-footer">
+                                <b><div id="totalPrice"></div></b>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" style="background-color: #004225; border-color: #004225;color: #DDFFBC;">Proceed to Pay</button>
+                                
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Payment Successfull!</h1>
+                      </div>
+                      <div class="modal-body">
+                        <center>
+                        <dotlottie-player src="https://lottie.host/c8f3c185-f6e1-44d7-a14a-8da19ed158d6/2iP4GlCObj.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+                        </center>
+                      </div>
+                      <div class="modal-footer">
+                        <form action = '/payed' method="post">
+                            <input type="submit" class="btn btn-primary" value="Close" style="background-color: #004225; border-color: #004225;color: #DDFFBC;">
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+            {% else %}
+                <center>
+                <dotlottie-player src="https://lottie.host/0530ca0e-71b9-4e54-824c-f33d5815dec4/Cjabr0P04C.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player></center>
+                <div class="project">Your cart is empty</div>
+            {% endif %}
+        
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    $(document).ready(function() {
+        // Update individual and total prices whenever quantity changes
+        function updatePrices() {
+            var totalPrice = 0;
+            {% for cart_item in cart_items %}
+                var quantity = parseInt($('input[name="quantity_{{ cart_item.product_id }}"]').val());
+                var price = parseFloat('{{ cart_item.price }}');
+                if (!isNaN(quantity) && !isNaN(price)) {
+                    var totalItemPrice = quantity * price;
+                    totalPrice += totalItemPrice;
+                    $('#total_price_{{ cart_item.product_id }}').text('₹' + totalItemPrice.toFixed(2));
+                }
+            {% endfor %}
+            $('#totalPrice').text('Total: ₹' + totalPrice.toFixed(2));
+        }
+            // Attach event listener to quantity inputs
+        {% for cart_item in cart_items %}
+            $('input[name="quantity_{{ cart_item.product_id }}"]').on('input', function() {
+                updatePrices();
+            });
+        {% endfor %}
+            // Initial update
+        updatePrices();
+    });
+    </script>
+{% endblock %}

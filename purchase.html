@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Purchase
+{% endblock %}
+
+{% block main %}
+	<div class="heading" style="color: #004225;text-align: left">Market Place.</div>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for msg in messages %}
+            <div class="alert alert-info" role="alert">
+			  <strong>{{ msg }}</strong>
+			</div>
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
+	<div class="row row-cols-1 row-cols-md-3 g-4">
+		{% for product in products %}
+			<form action="" method="post">
+			  <div class="col">
+			    <div class="card">
+			      <img src="static\def(1).png" class="card-img-top" alt="veggie">
+			      <div class="card-body">
+			        <h5 class="card-title">{{ product.name }}</h5>
+			        <h6>₹{{ product.price }}</h6>
+			        <input type="hidden" value="{{ product.product_id }}" name="item_id">
+			        <input type="submit" value="Add to Cart" class="btn btn-primary" style="background-color: #004225; border-color: #004225;color: #DDFFBC;">
+                    <br><br>
+			        <p class="card-text">{{ product.description }}</p>
+			      </div>
+			    </div>
+			  </div>
+			</form>
+		{% endfor %}
+	</div>
+{% endblock %}

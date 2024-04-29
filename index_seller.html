@@ -1,0 +1,53 @@
+{% extends "layout_seller.html" %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block main %}
+	<br>
+	<div class="heading" style="text-align: left">Add a new product</div>
+	<br>
+	<div class="soap">
+		<i class="fa fa-heart" style="padding-top: 8px; padding-right: 3px;font-size: 22px;color: #41B06E"></i>
+  		<div class="content">
+  			Join us in cultivating a healthier, more vibrant society by bringing fresh, innovative farm food products to market, enriching both lives and landscapes alike.
+  		</div>
+  	</div><br>
+	<div class="card" style="width: 72rem; background-color: #91C788; border-color: #DDFFBC;">
+	<br>
+	<h5 class="purchase_quantity">My New Product</h5><br>
+  	<div class="card-body">
+  	<br>
+	<form class="form-style-9" action="\seller" method="post">
+		<ul>
+		<li>
+		    <input type="text" class="field-style field-split align-left" placeholder="Name of Veggie/Fruit" autocomplete="off" name = "name" required/>
+		    <input type="float" class="field-style field-split align-right" placeholder="Price per kg (₹)" name= "price" autocomplete="off"  required/>
+
+		</li>
+		<li>
+		    <input type="text" autocomplete="off" class="field-style field-split align-left" placeholder="Phone" name= "phone" required/>
+		</li>
+		<li>
+		<textarea class="field-style" autocomplete="off" name="description" placeholder="Description"></textarea>
+		</li>
+		<div style="color: #004225; font-size: 18; text-align: left;">You Provide Delivery Service</div>
+		<div class="form-check" style="color: #004225; font-size: 16; text-align: left;">
+		  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="yes">
+		  <label class="form-check-label" for="flexRadioDefault1">Yes</label>
+		</div>
+
+		<div class="form-check" style="color: #004225; font-size: 16; text-align: left;">
+		  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="no">
+		  <label class="form-check-label" for="flexRadioDefault2">No</label>
+		</div>
+
+		<li>
+		<button class="btn btn-primary" type="submit" style="background-color: #004225; border-color: #004225; color: #DDFFBC;"><b>Add to Market</b></button>
+		</li>
+		</ul>
+	</form>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,588 @@
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+nav .navbar-brand .styling
+{
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+.section {
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+}
+
+.section:hover {
+    background-color: #fff2de;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    width: 90%;
+}
+
+.you
+{
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-size:50px;
+    color: white;
+}
+
+.tube
+{
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    color : #E63030;
+    font-size:50px;
+}
+
+.text
+{
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    color : white;
+    font-size:50px;
+}
+.to
+{
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color : white;
+}
+link
+{
+    color:  #FFB000;
+}
+link::hover
+{
+    color:  white;
+}
+
+.login_and_register
+{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: <weight>;
+    font-style: normal;
+    font-optical-sizing: auto;
+    color : #52734D;
+    font-size:50px;
+}
+
+.help
+{
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    color : white;
+    font-size:15px;;
+}
+
+.purchase_quantity
+{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    color : #52734D;
+    font-size:35px;
+}
+
+.quantity
+{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    color : #52734D;
+    font-size:34px;
+}
+
+.brand
+{
+    font-family: "Signika Negative", sans-serif;
+    margin:  15px;
+    padding:  5px;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    color : white;
+    font-size:70px;
+    text-align: left;
+}
+
+.motto
+{
+    margin:  0px;
+    padding:  0px;
+    font-family: "Josefin Sans", sans-serif;
+    color : white;
+    font-size:40px;
+    text-align: left;
+}
+
+.greet
+{
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    color : #52734D;
+    font-size:17px;
+}
+
+.problem
+{
+    text-decoration-color: #C1F4C5;
+    margin:  15px;
+    padding:  5px;
+    font-family: "Comfortaa", sans-serif;
+    text-decoration-style: wavy;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    color : #004225;
+    font-size:50px;
+    text-align: left;
+}
+
+.address
+{
+    text-decoration-color: #C1F4C5;
+    margin:  15px;
+    padding:  5px;
+    font-family: "Josefin Sans", sans-serif;
+    text-decoration-style: wavy;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    color : #004225;
+    font-size:40px;
+    text-align: center;
+}
+
+.count
+{
+    text-decoration-color: #C1F4C5;
+    margin:  15px;
+    padding:  5px;
+    font-family: "Josefin Sans", sans-serif;
+    text-decoration-style: wavy;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-size:80px;
+    text-align: center;
+}
+
+.c-hUpsPh-ifCsQfY-css {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: row;
+    gap: 8px;
+}
+.c-hUpsPh-ihgcmEP-css {
+    justify-content: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: 0px;
+    text-align:  left;
+    
+}
+
+.c-hUpsPh-icTKoBa-css {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: #DDFFBC;
+}
+.c-hUpsPh-icTKoBa-css {
+    flex-direction: row;
+}
+.help
+{
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    color : #52734D;
+    font-size:15px;;
+}
+
+.smalltext
+{
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    color : #52734D;
+    font-size:12px;;
+}
+
+.project
+{
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    color : #52734D;
+    font-size:25px;;
+}
+
+.value
+{
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    color : #52734D;
+    font-size:35px;;
+}
+
+.soap
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height:  100%;
+    box-sizing: border-box;
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #DDFFBC;
+}
+
+.soap
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height:  100%;
+    box-sizing: border-box;
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #DDFFBC;
+}
+.c-AsWAM-idRUpwz-css {
+    color: #00ddb3;
+}
+
+.content
+{
+    text-align:  left;
+    color:  black;
+    font-size: 18px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+
+.subcontent
+{
+    margin:  0px;
+    padding:  0px;
+    color: black;
+    text-decoration-line: none;
+    font-size: 17px;
+}
+
+.heading
+{
+    font-size: 50px;
+    font-color: black;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+.subheading
+{
+    font-size: 25px;
+    font-color: #333333;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.div-1 
+{
+    padding-top: 50px;
+    display: flex;    
+    background-image:  url('/static/banner-1.png');/*color: #004225;*/
+    height:  500px;
+    overflow: hidden;
+    background-position: center;
+    
+}
+    
+.div-2 {
+    padding-top: 50px;
+    display: flex;
+    background-color:  #29BB89;
+    color: #ABBAEA;
+    height:  600px;
+    overflow: hidden;
+    background-position: center;
+}
+    
+.div-3 {
+    padding-top: 50px;
+    display: flex;
+    background-color:  color: #ABBAEA;
+    height:  600px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    align-content: center;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+}
+
+.left{
+  width: 60%;
+}
+
+.right {
+  width: 40.001%;
+}
+
+section
+{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 80vh;
+}
+
+.hidden
+{
+    opacity:  0;
+    filter:  blur(5px);
+    transform:  translateX(-100%);
+    transition: all 1s;
+}
+
+.show
+{
+    opacity:  1;
+    filter:  blur(0);
+    transform: translateX(0);
+}
+
+.intro
+{
+    font-size:  20px;
+    color: black;
+}
+
+.intro .number
+{
+    font-size: 30px;
+}
+
+.intro .last
+{
+    font-size: 20px;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-between; /* this will add equal space between each image */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.vertical-menu {
+  width: 200px;
+  height: 150px;
+  overflow-y: auto;
+}
+
+.vertical-menu a {
+  background-color: #eee; /* Grey background color */
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+  background-color: #04AA6D; /* Add a green color to the "active/current" link */
+  color: white;
+}
+
+.select
+{
+    padding :8px 12px;
+    color:  #333333;
+    background-color:  #eeeeee;
+    border:  1px solid #dddddd;
+    cursor:  pointer;
+    border-radius:  5px;
+
+    appearnace:  none;
+    -webkit-appearance:  none;
+    -moz-appearance:  none;
+}
+
+.file
+{
+    padding :8px 12px;
+    color:  #333333;
+    background-color:  #eeeeee;
+    border:  1px solid #dddddd;
+    cursor:  pointer;
+    border-radius:  5px;
+
+    appearnace:  none;
+    -webkit-appearance:  none;
+    -moz-appearance:  none;
+}
+
+<style type="text/css">
+.form-style-9{
+    max-width: 450px;
+    background: #FAFAFA;
+    padding: 30px;
+    margin: 50px auto;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    border: 6px solid #305A72;
+}
+.form-style-9 ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+.form-style-9 ul li{
+    display: block;
+    margin-bottom: 10px;
+    min-height: 35px;
+}
+.form-style-9 ul li  .field-style{
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    padding: 8px;
+    outline: none;
+    border: 1px solid #B0CFE0;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+
+}.form-style-9 ul li  .field-style:focus{
+    box-shadow: 0 0 5px #B0CFE0;
+    border:1px solid #B0CFE0;
+}
+.form-style-9 ul li .field-split{
+    width: 49%;
+}
+.form-style-9 ul li .field-full{
+    width: 100%;
+}
+.form-style-9 ul li input.align-left{
+    float:left;
+}
+.form-style-9 ul li input.align-right{
+    float:right;
+}
+.form-style-9 ul li textarea{
+    width: 100%;
+    height: 100px;
+}
+.form-style-9 ul li input[type="button"], 
+.form-style-9 ul li input[type="submit"] {
+    -moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
+    box-shadow: inset 0px 1px 0px 0px #3985B1;
+    background-color: #216288;
+    border: 1px solid #17445E;
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    padding: 8px 18px;
+    text-decoration: none;
+    font: 12px Arial, Helvetica, sans-serif;
+}
+.form-style-9 ul li input[type="button"]:hover, 
+.form-style-9 ul li input[type="submit"]:hover {
+    background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
+    background-color: #28739E;
+}
+</style>
