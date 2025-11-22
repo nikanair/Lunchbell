@@ -1,6 +1,5 @@
 # Lunchbell
-
-**One-line summary:**  
+ (code/static/images/lunchbellT.png)
 Lunchbell is a full-stack web application designed to streamline the delivery of nutritious mid-day meals by connecting rural schools, local farmers, and community surplus food donors in India.
 
 ---
