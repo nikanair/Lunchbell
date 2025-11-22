@@ -1,6 +1,6 @@
 # Lunchbell
 
-![Lunchbell Screenshot](https://github.com/nikanair/Lunchbell/blob/c60dbf14f2706ad943ada223ac35d8133e1e590d/code/static/images/lunchbellupd.png)
+<img width="637" height="242" alt="image" src="https://github.com/user-attachments/assets/18a8f76b-0cc8-41fd-94a3-f2b23af86894" />
 
 Lunchbell is a full-stack web application designed to streamline the delivery of nutritious mid-day meals by connecting rural schools, local farmers, and community surplus food donors in India.
 
