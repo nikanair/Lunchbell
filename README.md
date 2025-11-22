@@ -28,6 +28,7 @@ Lunchbell is a full-stack web application designed to streamline the delivery of
 In India’s remote and under-funded schools, the mid-day meal scheme often faces logistical and quality challenges—leading to food scarcity, waste, or even tragic outcomes.  
 
 Please have a read about the Mid-Day Meal Tragedy at Bihar in India to understand the depth of this issue in the country:
+
 [<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/b039cb19-f71f-4163-87ca-e01f06cde9a5" />
 ](https://www.cnn.com/2013/07/19/world/asia/india-school-poisoning-fears)
 
