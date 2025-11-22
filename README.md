@@ -25,6 +25,10 @@ Lunchbell is a full-stack web application designed to streamline the delivery of
 
 ## Problem Statement
 In India’s remote and under-funded schools, the mid-day meal scheme often faces logistical and quality challenges—leading to food scarcity, waste, or even tragic outcomes.  
+
+Please have a read about the Mid-Day Meal Tragedy at Bihar in India to understand the depth of this issue in the country:
+[https://img.cnn.com/2013/07/19/world/asia/india-school-poisoning-fears](https://www.cnn.com/2013/07/19/world/asia/india-school-poisoning-fears)
+
 Farmers with surplus produce in rural regions struggle to access stable demand, and community surplus food often goes unused.  
 There is a need for a platform that **efficiently connects** local supply (farmers, households) with demand (schools), ensuring **affordable**, **safe**, and **nutritious** meals.
 
@@ -78,10 +82,3 @@ Watch this short walkthrough video:
 - Python 3.x  
 - MySQL server running or equivalent relational DB  
 - (Optional) Virtual environment recommended  
-
-### Installation
-```bash
-git clone https://github.com/nikanair/Lunchbell.git
-cd Lunchbell
-pip install -r requirements.txt
-# Set up MySQL database with appropriate tables (see sql/schema.sql if available)
