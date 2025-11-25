@@ -78,10 +78,3 @@ Watch this short walkthrough video:
 [![Lunchbell Demo](https://img.youtube.com/vi/oWbgjHm7XDY/0.jpg)](https://youtu.be/oWbgjHm7XDY)  
 
 ---
-
-## Getting Started
-
-### Prerequisites
-- Python 3.x  
-- MySQL server running or equivalent relational DB  
-- (Optional) Virtual environment recommended  
